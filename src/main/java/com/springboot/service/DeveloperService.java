@@ -44,7 +44,66 @@ public class DeveloperService {
 
 	public ArrayList<Developers_details> getAllDevelopers() throws SQLException {
 		ArrayList<Developers_details> allDeveloper = developersRepository.getAllDevelopers();
-		allDeveloper.forEach((d) -> System.out.println(d));
+		return allDeveloper;
+	}
+	public ArrayList<Developers_details> orderByDesc() throws SQLException {
+		ArrayList<Developers_details> allDeveloper = developersRepository.orderByDesc();
+		return allDeveloper;
+	}
+	public ArrayList<Developers_details> orderByASC() throws SQLException {
+		ArrayList<Developers_details> allDeveloper = developersRepository.orderByASC();
+		return allDeveloper;
+	}
+	public ArrayList<Developers_details> orderByDescSalary() throws SQLException {
+		ArrayList<Developers_details> allDeveloper = developersRepository.orderByDescSalary();
+		return allDeveloper;
+	}
+	public ArrayList<Developers_details> orderByASCSalary() throws SQLException {
+		ArrayList<Developers_details> allDeveloper = developersRepository.orderByASCSalary();
+		return allDeveloper;
+	}
+	public ArrayList<String> upperCaseName() throws SQLException {
+		ArrayList<String> allDeveloper = developersRepository.upperCaseName();
+		return allDeveloper;
+	}
+	public ArrayList<String> LowerCaseName() throws SQLException {
+		ArrayList<String> allDeveloper = developersRepository.LowerCaseName();
+		return allDeveloper;
+	}
+	public ArrayList<String> lessThan10000() throws SQLException{
+		ArrayList<String> allDeveloper = developersRepository.lessThan10000();
+		return allDeveloper;
+	}
+	public ArrayList<String> between10to20k() throws SQLException{
+		ArrayList<String> allDeveloper = developersRepository.between10to20k();
+		return allDeveloper;
+	}
+	public ArrayList<String> greaterThan50k() throws SQLException{
+		ArrayList<String> allDeveloper = developersRepository.greaterThan50k();
+		return allDeveloper;
+	}
+	public ArrayList<String> nameStartWithS() throws SQLException{
+		ArrayList<String> allDeveloper = developersRepository.nameStartWithS();
+		return allDeveloper;
+	}
+	public ArrayList<String> nameStartWithH() throws SQLException{
+		ArrayList<String> allDeveloper = developersRepository.nameStartWithH();
+		return allDeveloper;
+	}
+	public ArrayList<String> gmail() throws SQLException{
+		ArrayList<String> allDeveloper = developersRepository.gmail();
+		return allDeveloper;
+	}
+	public ArrayList<String> outlook() throws SQLException{
+		ArrayList<String> allDeveloper = developersRepository.outlook();
+		return allDeveloper;
+	}
+	public ArrayList<String> avgSalary() throws SQLException{
+		ArrayList<String> allDeveloper = developersRepository.avgSalary();
+		return allDeveloper;
+	}
+	public ArrayList<String> overAllSalary() throws SQLException{
+		ArrayList<String> allDeveloper = developersRepository.overAllSalary();
 		return allDeveloper;
 	}
 }
